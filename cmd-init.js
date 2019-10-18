@@ -76,15 +76,15 @@ function downloadMyCountryData(callback) {
       .join('/')
     + '-latest.osm.pbf'
   console.log('downloading region data: '+ url)
-  var curl = 'echo '
-    + ' `curl -s'  // Note curl command is executing with in tilde
+  var curl = 'curl '+ url + ' -o my-area.osm.pbf ';
+    /*+ ' `curl'  // Note curl command is executing with in tilde
     + ' --connect-timeout 10'
     + ' --retry 10'
     + ' --retry-delay 10'
     + ' --retry-max-time 500'
     + ' -w \'%{http_code}\''  // capturing the http status
     + ' ' + url
-    + ' -o my-area.osm.pbf `'  // closed tilde at the end
+    + ' -o my-area.osm.pbf `'  // closed tilde at the end*/
   console.log('curl: '+ curl)
   exec(
     curl,

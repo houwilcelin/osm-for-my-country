@@ -15,7 +15,7 @@ Consider this project as a boilerplate. You can learn all the components of a OS
 
 All the above mentioned packages would be installed with single scripts. 
 ```
-git clone https://github.com/gagan-bansal/osm-for-my-country.git
+git clone https://github.com/houwilcelin/osm-for-my-country.git
 cd osm-for-my-country
 bash install.sh
 ```
@@ -74,7 +74,7 @@ node index.js init --help
 Usage:node index.js init [options]
 
 Examples:
-  node index.js init --region 'Asia, Nepal'
+  node index.js init --region 'Africa, Benin'
 
 Options:
   -r, --region  Region to download with complete path as per GEOFABRIK
